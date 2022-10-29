@@ -1,0 +1,132 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+input[type="submit"]{
+  cursor: pointer;
+}
+
+
+
+.title-panel{
+  text-align: center;
+  background-color: rgb(32, 79, 116);
+  font-size: 30px;
+  padding: 20px 0;
+  color: white;
+  overflow: hidden;
+}
+
+.navbar{
+  background-color: rgba(89, 228, 182);
+ padding: 30px 0;
+ text-align: center;
+ overflow: hidden;
+}
+
+.navbar a{
+  padding: 35px 50px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  color:rgb(30, 35, 78);
+}
+
+.navbar a:hover{
+  background-color: rgb(78, 202, 215);
+}
+
+.all-product-grid-container{
+  background-color: rgb(213, 245, 248);
+  text-align: center;
+  margin: 50px 100px;
+  display: grid;
+  grid-template-columns: repeat(7,1fr) 1.5fr;
+  grid-auto-rows: 60px;
+  border: 1px solid rgb(30, 35, 78);
+}
+
+.all-product-grid-container .grid-item{
+  border: 1px solid rgb(30, 35, 78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all-product-grid-container .grid-item:nth-child(-n+8){
+ background-color: rgb(169, 237, 244);
+}
+
+
+
+/************** ADD PRODUCT PAGE ********************/
+
+.add-product-box-container{
+  text-align: center;
+  padding: 50px 0;
+}
+
+.add-product-box-container input, select{
+  height: 35px;
+  width: 400px;
+  padding-left: 10px;
+  border: 2px solid rgb(30, 35, 78);
+  border-radius: 5px;
+  font-size: 15px;
+  
+}
+
+.add-product-box-container .name{
+  resize: none;
+  height: 35px;
+  width: 400px;
+  padding-left: 10px;
+  border: 2px solid rgb(30, 35, 78);
+  border-radius: 5px;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.add-product-box-container .description{
+  resize: none;
+  height: 150px;
+  width: 400px;
+  padding-left: 10px;
+  border: 2px solid rgb(30, 35, 78);
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+
+
+/*************** CATEGORY PAGE ****************/
+
+.box-container{
+  display: flex;
+}
+
+.cat-grid-container{
+  background-color: rgb(213, 245, 248);
+  text-align: center;
+  margin: 20px 350px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 50px;
+  border: 1px solid rgb(30, 35, 78);
+}
+
+.cat-grid-container .grid-item{
+  border: 1px solid rgb(30, 35, 78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.cat-grid-container .grid-item:nth-child(-n+3){
+  background-color: rgb(169, 237, 244);
+ }
+
